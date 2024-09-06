@@ -5,13 +5,51 @@
 
 @inproceedings{cascaded_filtering,
   title={Cascaded Filtering Using the Sigma Point Transformation},
-  author={Shalaby, Mohammed and Cossette, Charles C. and Le Ny, Jerome and Forbes, James R.},
-  booktitle={IEEE Robotics and Automation Letters. Also appeared at the 2021 IEEE International Conference on Robotics and Automation, Xi'an, China.},
+  author={Shalaby, Mohammed A. and Cossette, Charles C. and Le Ny, Jerome and Forbes, James R.},
+  booktitle={IEEE Robotics and Automation Letters (RA-L). Best Student Paper finalist at the 2021 IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China.},
   year ={2021},
   abbr = {RA-L},
   arxiv = {2103.04249},
-  pdf = {cascaded_filtering.pdf},
+  pdf = {cascaded_filtering/cascaded_filtering.pdf},
   abstract={{It is often convenient to separate a state estimation task into smaller “local” tasks, where each local estimator estimates a subset of the overall system state. However, neglecting cross-covariance terms between state estimates can result in overconfident estimates, which can ultimately degrade the accuracy of the estimator. Common cascaded filtering techniques focus on the problem of modelling cross-covariances when the local estimators share a common state vector. This letter introduces a novel cascaded and decentralized filtering approach that approximates the cross-covariances when the local estimators consider distinct state vectors. The proposed estimator is validated in simulations and in experiments on a three-dimensional attitude and position estimation problem. The proposed approach is compared to a naive cascaded filtering approach that neglects cross-covariance terms, a sigma point-based Covariance Intersection filter, and a full-state filter. In both simulations and experiments, the proposed filter outperforms the naive and the Covariance Intersection filters, while performing comparatively to the full-state filter.}},
-  video={https://www.youtube.com/watch?v=L9BSYWUFoPE}
+  video={https://www.youtube.com/watch?v=L9BSYWUFoPE&ab_channel=DECAR},
+  preview = {}
 }
 
+@inproceedings{rpe_multi,
+  title={Relative Position Estimation in Multi-Agent Systems Using Attitude-Coupled Range Measurements},
+  author={Shalaby, Mohammed A. and Cossette, Charles C. and Forbes, James R. and Le Ny, Jerome},
+  booktitle={IEEE Robotics and Automation Letters (RA-L). Also appears at the 2021 IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China.},
+  year ={2021},
+  abbr = {RA-L},
+  arxiv = {2207.07993},
+  pdf = {rpe_multi/rpe_multi.pdf},
+  abstract={{The ability to accurately estimate the position of robotic agents relative to one another, in possibly GPS-denied environments, is crucial to execute collaborative tasks. Inter-agent range measurements are available at a low cost, due to technologies such as ultra-wideband radio. However, the task of three-dimensional relative position estimation using range measurements in multi-agent systems suffers from unobservabilities. This letter presents a sufficient condition for the observability of the relative positions, and satisfies the condition using a simple framework with only range measurements, an accelerometer, a rate gyro, and a magnetometer. The framework has been tested in simulation and in experiments, where 40-50 cm positioning accuracy is achieved using inexpensive off-the-shelf hardware.}},
+  video={https://www.youtube.com/watch?v=cHiUROfOMYE&ab_channel=DECAR},
+  preview = {}
+}
+
+@article{passive_listening,
+    title = {Multi-Robot Relative Pose Estimation and IMU Preintegration Using Passive UWB Transceivers},
+    author={Shalaby, Mohammed A. and Cossette, Charles C. and Le Ny, Jerome and Forbes, James R.},
+    journal = {IEEE Transactions on Robotics (T-RO)},
+    year = {2024},
+    abbr = {T-RO},
+    pdf = {passive_listening/passive_listening.pdf},
+    arxiv = {2304.03837},
+    video = {https://drive.google.com/file/d/1rHJDNhMWdRCUGQMPNYhXszPIJ58gF_He/view?usp=drive_link},
+    abstract = {{Ultra-wideband (UWB) systems are becoming increasingly popular as a means of inter-robot ranging and communication. A major constraint associated with UWB is that only one pair of UWB transceivers can range at a time to avoid interference, hence hindering the scalability of UWB-based localization. In this article, a ranging protocol is proposed that allows all robots to passively listen on neighboring communicating robots without any hierarchical restrictions on the role of the robots. This is utilized to allow each robot to obtain more range measurements and to broadcast preintegrated inertial measurement unit (IMU) measurements for relative extended pose state estimation directly on SE2(3). Consequently, a simultaneous clock-synchronization and relative-pose estimator is formulated using an on-manifold extended Kalman filter (EKF) and is evaluated in simulation using Monte Carlo runs for up to seven robots. The ranging protocol is implemented in C on custom-made UWB boards fitted to three quadcopters, and the proposed filter is evaluated over multiple experimental trials, yielding up to 48% improvement in localization accuracy.}},
+    preview = {}
+}
+
+@article{pseudomeasurements,
+    title = {Decentralized State Estimation: An Approach Using Pseudomeasurements and Preintegration},
+    author={Cossette, Charles C. and Shalaby, Mohammed A. and Saussi\'e, David and Forbes, James R.},
+    journal = {The International Journal of Robotics Research (IJRR)},
+    year = {2024},
+    abbr = {IJRR},
+    pdf = {pseudomeasurements/pseudomeasurements.pdf},
+    arxiv = {2304.04036},
+    abstract = {{This paper addresses the problem of decentralized, collaborative state estimation in robotic teams. In particular, this paper considers problems where individual robots estimate similar physical quantities, such as each other’s position relative to themselves. The use of pseudomeasurements is introduced as a means of modeling such relationships between robots’ state estimates and is shown to be a tractable way to approach the decentralized state estimation problem. Moreover, this formulation easily leads to a general-purpose observability test that simultaneously accounts for measurements that robots collect from their own sensors, as well as the communication structure within the team. Finally, input preintegration is proposed as a communication-efficient way of sharing odometry information between robots, and the entire theory is appropriate for both vector-space and Lie-group state definitions. To overcome the need for communicating preintegrated covariance information, a deep autoencoder is proposed that reconstructs the covariance information from the inputs, hence further reducing the communication requirements. The proposed framework is evaluated on three different simulated problems, and one experiment involving three quadcopters.}},
+    preview = {}
+}
