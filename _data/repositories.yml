@@ -6,3 +6,7 @@ repo_description_lines_max: 2
 github_repos:
   - shalabymhd/husky_lqr
   - decargroup/uwb_calibration
+  - utiasASRL/starloc
+  - shalabymhd/mavros_gnc
+  - shalabymhd/uwb_firmware
+  - shalabymhd/uwb_gazebo

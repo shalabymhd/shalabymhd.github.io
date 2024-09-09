@@ -3,7 +3,7 @@
 
 @string{aps = {American Physical Society,}}
 
-@inproceedings{cascaded_filtering,
+@article{cascaded_filtering,
   title={Cascaded Filtering Using the Sigma Point Transformation},
   author={Shalaby, Mohammed A. and Cossette, Charles C. and Le Ny, Jerome and Forbes, James R.},
   booktitle={IEEE Robotics and Automation Letters (RA-L). Best Student Paper finalist at the 2021 IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China.},
@@ -16,16 +16,41 @@
   preview = {}
 }
 
-@inproceedings{rpe_multi,
+@article{rpe_multi,
   title={Relative Position Estimation in Multi-Agent Systems Using Attitude-Coupled Range Measurements},
   author={Shalaby, Mohammed A. and Cossette, Charles C. and Forbes, James R. and Le Ny, Jerome},
-  booktitle={IEEE Robotics and Automation Letters (RA-L). Also appears at the 2021 IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China.},
+  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at the 2021 IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China.},
   year ={2021},
   abbr = {RA-L},
   arxiv = {2207.07993},
   pdf = {rpe_multi/rpe_multi.pdf},
   abstract={{The ability to accurately estimate the position of robotic agents relative to one another, in possibly GPS-denied environments, is crucial to execute collaborative tasks. Inter-agent range measurements are available at a low cost, due to technologies such as ultra-wideband radio. However, the task of three-dimensional relative position estimation using range measurements in multi-agent systems suffers from unobservabilities. This letter presents a sufficient condition for the observability of the relative positions, and satisfies the condition using a simple framework with only range measurements, an accelerometer, a rate gyro, and a magnetometer. The framework has been tested in simulation and in experiments, where 40-50 cm positioning accuracy is achieved using inexpensive off-the-shelf hardware.}},
   video={https://www.youtube.com/watch?v=cHiUROfOMYE&ab_channel=DECAR},
+  preview = {}
+}
+
+@article{heading_rss,
+  title={Heading Estimation Using Ultra-Wideband Received Signal Strength and Gaussian Processes},
+  author={Daniil Lisus and Cossette, Charles C. and Shalaby, Mohammed A. and Forbes, James R.},
+  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at the 2021 IEEE International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic.},
+  year ={2021},
+  abbr = {RA-L},
+  arxiv = {2109.04868},
+  pdf = {heading_rss/heading_rss.pdf},
+  abstract={{It is essential that a robot has the ability to determine its position and orientation to execute tasks autonomously. Heading estimation is especially challenging in indoor environments where magnetic distortions make magnetometer-based heading estimation difficult. Ultra-wideband (UWB) transceivers are common in indoor localization problems. This letter experimentally demonstrates how to use UWB range and received signal strength (RSS) measurements to estimate robot heading. The RSS of a UWB antenna varies with its orientation. As such, a Gaussian process (GP) is used to learn a data-driven relationship from UWB range and RSS inputs to orientation outputs. Combined with a gyroscope in an invariant extended Kalman filter, this realizes a heading estimation method that uses only UWB and gyroscope measurements.}},
+  news={https://clearpathrobotics.com/blog/2021/10/mcgill-university-predicts-indoor-robot-heading-with-ultra-wideband-technology/},
+  preview = {}
+}
+
+@article{rpe_two,
+  title={Relative position estimation between two UWB devices with IMUs},
+  author={Cossette, Charles C. and Shalaby, Mohammed A. and Saussi\'e, David and Forbes, James R. and Le Ny, Jerome},
+  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at the 2021 IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China.},
+  year ={2021},
+  abbr = {RA-L},
+  arxiv = {2104.10730},
+  pdf = {rpe_two/rpe_two.pdf},
+  abstract={{For a team of robots to work collaboratively, it is crucial that each robot have the ability to determine the position of their neighbors, relative to themselves, in order to execute tasks autonomously. This letter presents an algorithm for determining the three-dimensional relative position between two mobile robots, each using nothing more than a single ultra-wideband transceiver, an accelerometer, a rate gyro, and a magnetometer. A sliding window filter estimates the relative position at selected keypoints by combining the distance measurements with acceleration estimates, which each agent computes using an on-board attitude estimator. The algorithm is appropriate for real-time implementation, and has been tested in simulation and experiment, where it comfortably outperforms standard estimators. A positioning accuracy of less than 1 m is achieved with inexpensive sensors.}},
   preview = {}
 }
 
