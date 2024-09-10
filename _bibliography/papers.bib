@@ -14,6 +14,7 @@
   pdf = {cascaded_filtering/cascaded_filtering.pdf},
   abstract={{It is often convenient to separate a state estimation task into smaller “local” tasks, where each local estimator estimates a subset of the overall system state. However, neglecting cross-covariance terms between state estimates can result in overconfident estimates, which can ultimately degrade the accuracy of the estimator. Common cascaded filtering techniques focus on the problem of modelling cross-covariances when the local estimators share a common state vector. This letter introduces a novel cascaded and decentralized filtering approach that approximates the cross-covariances when the local estimators consider distinct state vectors. The proposed estimator is validated in simulations and in experiments on a three-dimensional attitude and position estimation problem. The proposed approach is compared to a naive cascaded filtering approach that neglects cross-covariance terms, a sigma point-based Covariance Intersection filter, and a full-state filter. In both simulations and experiments, the proposed filter outperforms the naive and the Covariance Intersection filters, while performing comparatively to the full-state filter.}},
   video={https://www.youtube.com/watch?v=L9BSYWUFoPE&ab_channel=DECAR},
+  selected={true},
   preview = {}
 }
 
@@ -27,6 +28,7 @@
   pdf = {rpe_multi/rpe_multi.pdf},
   abstract={{The ability to accurately estimate the position of robotic agents relative to one another, in possibly GPS-denied environments, is crucial to execute collaborative tasks. Inter-agent range measurements are available at a low cost, due to technologies such as ultra-wideband radio. However, the task of three-dimensional relative position estimation using range measurements in multi-agent systems suffers from unobservabilities. This letter presents a sufficient condition for the observability of the relative positions, and satisfies the condition using a simple framework with only range measurements, an accelerometer, a rate gyro, and a magnetometer. The framework has been tested in simulation and in experiments, where 40-50 cm positioning accuracy is achieved using inexpensive off-the-shelf hardware.}},
   video={https://www.youtube.com/watch?v=cHiUROfOMYE&ab_channel=DECAR},
+  selected={true},
   preview = {}
 }
 
@@ -77,6 +79,7 @@
   pdf = {pseudomeasurements/pseudomeasurements.pdf},
   arxiv = {2304.04036},
   abstract = {{This paper addresses the problem of decentralized, collaborative state estimation in robotic teams. In particular, this paper considers problems where individual robots estimate similar physical quantities, such as each other’s position relative to themselves. The use of pseudomeasurements is introduced as a means of modeling such relationships between robots’ state estimates and is shown to be a tractable way to approach the decentralized state estimation problem. Moreover, this formulation easily leads to a general-purpose observability test that simultaneously accounts for measurements that robots collect from their own sensors, as well as the communication structure within the team. Finally, input preintegration is proposed as a communication-efficient way of sharing odometry information between robots, and the entire theory is appropriate for both vector-space and Lie-group state definitions. To overcome the need for communicating preintegrated covariance information, a deep autoencoder is proposed that reconstructs the covariance information from the inputs, hence further reducing the communication requirements. The proposed framework is evaluated on three different simulated problems, and one experiment involving three quadcopters.}},
+  selected={true},
   preview = {}
 }
 
@@ -160,6 +163,7 @@
   abbr = {Ph.D. Thesis},
   pdf = {thesis/thesis.pdf},
   abstract = {{This thesis examines the utilization of ultra-wideband (UWB) radio for robot navigation in indoor applications. UWB, a wireless communication technology, offers a means of generating distance (or range) measurements and establishing communication channels among mobile robots and fixed anchors at known locations. When fixed anchors are present, UWB can be harnessed for precise localization, enabling, for example, the tracking of robots in warehouse applications. In unexplored environments lacking a fixed infrastructure, UWB transceivers installed on different robots facilitate inter-robot ranging and communication, thereby enabling relative localization - an essential prerequisite for tasks such as maintaining a group formation, collaboratively mapping an area, or ensuring effective collision avoidance. In order to maximize the potential of UWB for localization purposes, it becomes imperative to tackle fundamental challenges of UWB, such as clock synchronization and the choice of ranging protocol, concurrently with the development of the state estimation algorithm. Conventionally, these two issues have been addressed separately.The primary objective of this thesis is to resolve both the underlying low-level UWB ranging and communication performance challenges, as well as the state estimation problem, ultimately providing a practical, robust, and implementable solution for indoor navigation. To this end, this thesis delves into the matter of UWB measurement calibration, aiming to enhance ranging accuracy and characterize measurement uncertainty for use in a probabilistic framework. Subsequently, the selection of an appropriate ranging protocol is motivated to facilitate localization and efficient inter-robot communication. Lastly, this thesis employs UWB measurements within a filtering framework to tackle the problem of state estimation, encompassing both a scenario involving a single robot performing a closed-loop teach-and-repeat experiment and a multi-robot scenario where the robots perform on-manifold relative localization and attitude estimation using preintegration techniques. Comprehensive testing of all proposed algorithms is conducted through simulation and real-world experiments employing custom-built UWB modules fitted onto quadcopters.}},
+  selected={true},
   preview = {}
 }
 
