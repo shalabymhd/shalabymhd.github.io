@@ -166,9 +166,6 @@
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}
-    {% if entry.highlight %}
-      <strong style="border-width:1px; border-style:solid;color:red;padding:0.1em">{{ entry.highlight }}</strong>
-    {%- endif %}
     {% if entry.additional_info %}
       {% capture entrytype %}{{ entrytype }}{{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
     {% endif %}
@@ -184,6 +181,9 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.highlight %}
+      <strong style="color:red;padding:0.1em">{{ entry.highlight }}</strong>
+    {%- endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
