@@ -3,13 +3,27 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{passive_listening,
+  title = {Multi-Robot Relative Pose Estimation and IMU Preintegration Using Passive UWB Transceivers},
+  author={Shalaby, Mohammed A. and Cossette, Charles C. and Le Ny, Jerome and Forbes, James R.},
+  journal = {IEEE Transactions on Robotics (T-RO)},
+  year = {2024},
+  abbr = {T-RO},
+  pdf = {passive_listening/passive_listening.pdf},
+  arxiv = {2304.03837},
+  video = {https://drive.google.com/file/d/1rHJDNhMWdRCUGQMPNYhXszPIJ58gF_He/view?usp=drive_link},
+  abstract = {{Ultra-wideband (UWB) systems are becoming increasingly popular as a means of inter-robot ranging and communication. A major constraint associated with UWB is that only one pair of UWB transceivers can range at a time to avoid interference, hence hindering the scalability of UWB-based localization. In this article, a ranging protocol is proposed that allows all robots to passively listen on neighboring communicating robots without any hierarchical restrictions on the role of the robots. This is utilized to allow each robot to obtain more range measurements and to broadcast preintegrated inertial measurement unit (IMU) measurements for relative extended pose state estimation directly on SE2(3). Consequently, a simultaneous clock-synchronization and relative-pose estimator is formulated using an on-manifold extended Kalman filter (EKF) and is evaluated in simulation using Monte Carlo runs for up to seven robots. The ranging protocol is implemented in C on custom-made UWB boards fitted to three quadcopters, and the proposed filter is evaluated over multiple experimental trials, yielding up to 48% improvement in localization accuracy.}},
+  selected={true},
+  preview = {}
+}
+
 @article{cascaded_filtering,
   title={Cascaded Filtering Using the Sigma Point Transformation},
   author={Shalaby, Mohammed A. and Cossette, Charles C. and Le Ny, Jerome and Forbes, James R.},
-  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at ICRA, Xi'an, China.},
+  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at ICRA},
   highlight={"Best Student Paper" finalist},
   year ={2021},
-  abbr = {RA-L},
+  abbr = {RA-L/ICRA},
   arxiv = {2103.04249},
   pdf = {cascaded_filtering/cascaded_filtering.pdf},
   abstract={{It is often convenient to separate a state estimation task into smaller “local” tasks, where each local estimator estimates a subset of the overall system state. However, neglecting cross-covariance terms between state estimates can result in overconfident estimates, which can ultimately degrade the accuracy of the estimator. Common cascaded filtering techniques focus on the problem of modelling cross-covariances when the local estimators share a common state vector. This letter introduces a novel cascaded and decentralized filtering approach that approximates the cross-covariances when the local estimators consider distinct state vectors. The proposed estimator is validated in simulations and in experiments on a three-dimensional attitude and position estimation problem. The proposed approach is compared to a naive cascaded filtering approach that neglects cross-covariance terms, a sigma point-based Covariance Intersection filter, and a full-state filter. In both simulations and experiments, the proposed filter outperforms the naive and the Covariance Intersection filters, while performing comparatively to the full-state filter.}},
@@ -21,8 +35,8 @@
 @article{rpe_multi,
   title={Relative Position Estimation in Multi-Agent Systems Using Attitude-Coupled Range Measurements},
   author={Shalaby, Mohammed A. and Cossette, Charles C. and Forbes, James R. and Le Ny, Jerome},
-  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at ICRA, Xi'an, China.},
-  abbr = {RA-L},
+  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at ICRA},
+  abbr = {RA-L/ICRA},
   year ={2021},
   arxiv = {2207.07993},
   pdf = {rpe_multi/rpe_multi.pdf},
@@ -35,9 +49,9 @@
 @article{heading_rss,
   title={Heading Estimation Using Ultra-Wideband Received Signal Strength and Gaussian Processes},
   author={Daniil Lisus and Cossette, Charles C. and Shalaby, Mohammed A. and Forbes, James R.},
-  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at IROS, Prague, Czech Republic.},
+  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at IROS},
   year ={2021},
-  abbr = {RA-L},
+  abbr = {RA-L/IROS},
   arxiv = {2109.04868},
   pdf = {heading_rss/heading_rss.pdf},
   abstract={{It is essential that a robot has the ability to determine its position and orientation to execute tasks autonomously. Heading estimation is especially challenging in indoor environments where magnetic distortions make magnetometer-based heading estimation difficult. Ultra-wideband (UWB) transceivers are common in indoor localization problems. This letter experimentally demonstrates how to use UWB range and received signal strength (RSS) measurements to estimate robot heading. The RSS of a UWB antenna varies with its orientation. As such, a Gaussian process (GP) is used to learn a data-driven relationship from UWB range and RSS inputs to orientation outputs. Combined with a gyroscope in an invariant extended Kalman filter, this realizes a heading estimation method that uses only UWB and gyroscope measurements.}},
@@ -48,25 +62,12 @@
 @article{rpe_two,
   title={Relative position estimation between two UWB devices with IMUs},
   author={Cossette, Charles C. and Shalaby, Mohammed A. and Saussi\'e, David and Forbes, James R. and Le Ny, Jerome},
-  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at ICRA, Xi'an, China.},
+  journal={IEEE Robotics and Automation Letters (RA-L). Also appears at ICRA},
   year ={2021},
-  abbr = {RA-L},
+  abbr = {RA-L/ICRA},
   arxiv = {2104.10730},
   pdf = {rpe_two/rpe_two.pdf},
   abstract={{For a team of robots to work collaboratively, it is crucial that each robot have the ability to determine the position of their neighbors, relative to themselves, in order to execute tasks autonomously. This letter presents an algorithm for determining the three-dimensional relative position between two mobile robots, each using nothing more than a single ultra-wideband transceiver, an accelerometer, a rate gyro, and a magnetometer. A sliding window filter estimates the relative position at selected keypoints by combining the distance measurements with acceleration estimates, which each agent computes using an on-board attitude estimator. The algorithm is appropriate for real-time implementation, and has been tested in simulation and experiment, where it comfortably outperforms standard estimators. A positioning accuracy of less than 1 m is achieved with inexpensive sensors.}},
-  preview = {}
-}
-
-@article{passive_listening,
-  title = {Multi-Robot Relative Pose Estimation and IMU Preintegration Using Passive UWB Transceivers},
-  author={Shalaby, Mohammed A. and Cossette, Charles C. and Le Ny, Jerome and Forbes, James R.},
-  journal = {IEEE Transactions on Robotics (T-RO)},
-  year = {2024},
-  abbr = {T-RO},
-  pdf = {passive_listening/passive_listening.pdf},
-  arxiv = {2304.03837},
-  video = {https://drive.google.com/file/d/1rHJDNhMWdRCUGQMPNYhXszPIJ58gF_He/view?usp=drive_link},
-  abstract = {{Ultra-wideband (UWB) systems are becoming increasingly popular as a means of inter-robot ranging and communication. A major constraint associated with UWB is that only one pair of UWB transceivers can range at a time to avoid interference, hence hindering the scalability of UWB-based localization. In this article, a ranging protocol is proposed that allows all robots to passively listen on neighboring communicating robots without any hierarchical restrictions on the role of the robots. This is utilized to allow each robot to obtain more range measurements and to broadcast preintegrated inertial measurement unit (IMU) measurements for relative extended pose state estimation directly on SE2(3). Consequently, a simultaneous clock-synchronization and relative-pose estimator is formulated using an on-manifold extended Kalman filter (EKF) and is evaluated in simulation using Monte Carlo runs for up to seven robots. The ranging protocol is implemented in C on custom-made UWB boards fitted to three quadcopters, and the proposed filter is evaluated over multiple experimental trials, yielding up to 48% improvement in localization accuracy.}},
   preview = {}
 }
 
@@ -79,7 +80,6 @@
   pdf = {pseudomeasurements/pseudomeasurements.pdf},
   arxiv = {2304.04036},
   abstract = {{This paper addresses the problem of decentralized, collaborative state estimation in robotic teams. In particular, this paper considers problems where individual robots estimate similar physical quantities, such as each other’s position relative to themselves. The use of pseudomeasurements is introduced as a means of modeling such relationships between robots’ state estimates and is shown to be a tractable way to approach the decentralized state estimation problem. Moreover, this formulation easily leads to a general-purpose observability test that simultaneously accounts for measurements that robots collect from their own sensors, as well as the communication structure within the team. Finally, input preintegration is proposed as a communication-efficient way of sharing odometry information between robots, and the entire theory is appropriate for both vector-space and Lie-group state definitions. To overcome the need for communicating preintegrated covariance information, a deep autoencoder is proposed that reconstructs the covariance information from the inputs, hence further reducing the communication requirements. The proposed framework is evaluated on three different simulated problems, and one experiment involving three quadcopters.}},
-  selected={true},
   preview = {}
 }
 
@@ -176,6 +176,7 @@
   pdf = {signal_timing/signal_timing.pdf},
   arxiv = {2304.04036},
   abstract = {{Time-of-flight-based ranging among transceivers with different clocks requires protocols that accommodate varying rates of the clocks. Double-sided two-way ranging (DS-TWR) is widely adopted as a standard protocol due to its accuracy; however, the precision of DS-TWR has not been clearly addressed. In this article, an analytical model of the variance of DS-TWR is derived as a function of the user-programmed response delays, which is then compared with the Cramer–Rao lower bound . This is then used to formulate an optimization problem over the response delays in order to maximize the information gained from range measurements. The derived analytical variance model and optimized protocol are validated experimentally with two ranging ultrawideband transceivers, where 29 million range measurements are collected.}},
+  selected={true},
   preview = {}
 }
 
@@ -194,9 +195,9 @@
 @article{dive,
   title = {DIVE: Deep Inertial-Only Velocity Aided Estimation for Quadrotors},
   author={Bajwa, Angad and Cossette, Charles C. and Shalaby, Mohammed A. and Forbes, James R.},
-  journal = {IEEE Robotics and Automation Letters (RA-L)},
+  journal = {IEEE Robotics and Automation Letters (RA-L). Also appears at IROS},
   year = {2024},
-  abbr = {RA-L},
+  abbr = {RA-L/IROS},
   pdf = {dive/dive.pdf},
   abstract = {{This letter presents a novel deep-learning-based solution to the problem of quadrotor inertial navigation. Visual-inertial odometry (VIO) is often used for quadrotor pose estimation, where an inertial measurement unit (IMU) provides a motion prior. When VIO fails, IMU dead reckoning is often used, which quickly leads to significant pose estimation drift. Learned inertial odometry leverages deep learning and model-based filtering to improve upon dead reckoning. Efforts for quadrotors, however, rely on sensors other than, or in addition to, an IMU, or have only been proven on a specific set of trajectories. The proposed generalizable approach regresses a 3D velocity estimate from only a history of IMU measurements, and the learned outputs are applied as a correction to an on-manifold Extended Kalman Filter. The proposed algorithm is shown to be superior to the state-of-the-art in learned inertial odometry. A 42% improvement in localization accuracy is shown over the state-of-the-art on an in-distribution testing set, and a 22% improvement is shown on an out-of-distribution testing set. Additionally, the proposed algorithm shows a 43% improvement over dead reckoning in VIO failure scenarios.}},
   code = {https://github.com/decargroup/DIVE},
@@ -226,5 +227,6 @@
   abstract = {Ultra-Wideband (UWB) systems are becoming increasingly popular for indoor localization, where range measurements are obtained by measuring the time-of-flight of radio signals. However, the range measurements typically suffer from a systematic error or bias that must be corrected for high-accuracy localization. In this paper, a ranging protocol is proposed alongside a robust and scalable antenna-delay calibration procedure to accurately and efficiently calibrate antenna delays for many UWB tags. Additionally, the bias and uncertainty of the measurements are modelled as a function of the received-signal power. The full calibration procedure is presented using experimental training data of 3 aerial robots fitted with 2 UWB tags each, and then evaluated on 2 test experiments. A localization problem is then formulated on the experimental test data, and the calibrated measurements and their modelled uncertainty are fed into an extended Kalman filter (EKF). The proposed calibration is shown to yield an average of 46% improvement in localization accuracy. Lastly, the paper is accompanied by an open-source UWB-calibration Python library, which can be found at https://github.com/decargroup/uwb_calibration.},
   code = {https://github.com/decargroup/uwb_calibration},
   video = {https://drive.google.com/file/d/1beXD16L2S5zDrDK-IQ4F8fqMHjWiEcHm/view?usp=drive_link},
+  selected={true},
   preview = {}
 }
