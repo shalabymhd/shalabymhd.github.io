@@ -113,7 +113,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can get in touch with me directly by sending an email to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+  You can get in touch with me directly by sending an email to <a href="mailto:shalaby.mhd@gmail.com">shalaby.mhd@gmail.com</a>.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
