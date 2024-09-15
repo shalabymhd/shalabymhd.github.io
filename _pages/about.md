@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Robotics Engineer @ Provectus Robotics | Ph.D. in Robotics from McGill University
 
