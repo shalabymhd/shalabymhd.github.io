@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Software Perception Engineer @ Provectus Robotics | Ph.D. in Robotics from McGill University
+subtitle: Perception Software Engineer @ Provectus Robotics | Ph.D. in Robotics from McGill University
 
 profile:
   align: right
